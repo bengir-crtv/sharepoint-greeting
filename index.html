@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+    margin:0;
+    padding:20px;
+    font-family:"Segoe UI",sans-serif;
+    background:transparent;
+}
+
+.greeting{
+    font-size:36px;
+    font-weight:600;
+    color:#323130;
+}
+</style>
+</head>
+<body>
+
+<div class="greeting" id="greeting"></div>
+
+<script>
+const h = new Date().getHours();
+
+let text = "";
+
+if (h < 12) {
+    text = "🌅 Guten Morgen";
+}
+else if (h < 18) {
+    text = "☀️ Guten Nachmittag";
+}
+else {
+    text = "🌙 Guten Abend";
+}
+
+document.getElementById("greeting").innerHTML = text;
+</script>
+
+</body>
+</html>
