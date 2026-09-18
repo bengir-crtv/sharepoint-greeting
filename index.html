@@ -29,13 +29,13 @@ const h = new Date().getHours();
 let text = "";
 
 if (h < 12) {
-    text = "🌅 Guten Morgen";
+    text = "Guten Morgen";
 }
 else if (h < 18) {
-    text = "☀️ Guten Nachmittag";
+    text = "Guten Nachmittag";
 }
 else {
-    text = "🌙 Guten Abend";
+    text = "Guten Abend";
 }
 
 document.getElementById("greeting").innerHTML = text;
